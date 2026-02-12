@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="793.47064"
+   height="107.02667"
+   viewBox="0 0 793.47064 107.02667"
+   sodipodi:docname="Base Namaskar.ai"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath18">
+      <path
+         d="m 0,168.046 h 595.103 v 80.27 H 0 Z"
+         id="path16" />
+    </clipPath>
+    <linearGradient
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(595.10303,0,0,-595.10303,0,208.18121)"
+       spreadMethod="pad"
+       id="linearGradient38">
+      <stop
+         style="stop-opacity:1;stop-color:#b07912"
+         offset="0"
+         id="stop24" />
+      <stop
+         style="stop-opacity:1;stop-color:#f3db77"
+         offset="0.29900027"
+         id="stop26" />
+      <stop
+         style="stop-opacity:1;stop-color:#f3db77"
+         offset="0.408246"
+         id="stop28" />
+      <stop
+         style="stop-opacity:1;stop-color:#f3db77"
+         offset="0.49370255"
+         id="stop30" />
+      <stop
+         style="stop-opacity:1;stop-color:#b07912"
+         offset="0.973176"
+         id="stop32" />
+      <stop
+         style="stop-opacity:1;stop-color:#b07912"
+         offset="0.9756347"
+         id="stop34" />
+      <stop
+         style="stop-opacity:1;stop-color:#b07912"
+         offset="1"
+         id="stop36" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false" />
+  <g
+     id="g10"
+     inkscape:groupmode="layer"
+     inkscape:label="Page 1"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,331.08799)">
+    <g
+       id="g12">
+      <g
+         id="g14"
+         clip-path="url(#clipPath18)">
+        <g
+           id="g20">
+          <g
+             id="g22">
+            <path
+               d="m 0,168.046 h 595.103 v 80.27 H 0 Z"
+               style="fill:url(#linearGradient38);stroke:none"
+               id="path40" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
