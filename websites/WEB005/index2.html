@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Site verification - work done
+ # - Browser Tab - have Logo and Title Name
+ # Center page on Screen: Big and Small (always try to center)
+ # fit screen size -  do not CUT information when resizing or different Screens sizes Monitor vs Phone
+ # Button Animation
+ 
+ improvements
+ # choose FONT
+ # obtain Images of the Brand?!
+ # Design Logotips (png,SVG for better resolution on resize)
+ -->
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PublixCreative</title>
+	
+	<!-- 
+
+	<link rel="icon"             href="./ASSETS/PICS/iconew-150x150.png" sizes="32x32" />
+	<link rel="icon"             href="./ASSETS/PICS/iconew-300x300.png" sizes="192x192" /> 
+	<link rel="apple-touch-icon" href="./ASSETS/PICS/iconew-300x300.png" />
+	
+	-->
+	<link rel="stylesheet"  href="./ASSETS/FONTS/fonts.css"> 
+	<link rel="stylesheet" href="./ASSETS/CSS/Dots.css">
+	
+	
+	<style>
+	a, a:hover, a:visited, a:active {
+	  color: inherit;
+	  text-decoration: none;
+	 }
+	 
+	body {
+		line-height: 1.5;
+		overflow-x: hidden;
+		}
+		
+	html {
+		scroll-behavior: smooth;
+		}
+
+	</style>
+	
+	
+	<style>
+	
+	.fundowall {
+	  background-image: url("./_STYLE/ICONS/fundowall.svg"); /* The image used */
+	  background-size: cover;
+	}
+	
+	.menu_BOTTOM  { margin-top:60px; }
+	.menu_TOPLEFT { margin-top:60px;width:100%; }
+	
+	@media screen and (max-width: 802px) {
+	 .menu_BOTTOM { margin-top:0px;display:inline-block;}
+	 .menu_TOPLEFT  { margin-top:0px;display:inline-block;width:130px;}
+	}
+	
+	@media screen and (max-width: 452px) {
+	 .menu_BOTTOM { margin-top:0px;display:inline-block;}
+	 .menu_TOPLEFT  { margin-top:0px;display:block;width:95%;font-size:0.8em;font-weight:100;}
+	}
+
+	</style>
+	
+	<style>
+	* {
+	  box-sizing: border-box;
+	}
+
+	.flex-container {
+	  display: flex;
+	  flex-wrap: wrap;
+	  /*font-size: 30px;*/
+	  text-align: center;
+	}
+
+	.flex-item-full {
+	  background:rbga(233,80,28,1);
+	  padding: 10px;
+	  flex: 100%;
+	}
+
+	.flex-item-left {
+
+	  flex: 50%;
+	  max-width:300px;
+	  margin-top:15px;
+	  padding: 10px;
+	  
+	  background-color:rgba(255,255,255,0.1); /*rbga(233,80,28,1);*/
+	  border-radius:15%;
+	  border:0px solid #E9501C;
+	  box-shadow: 0 6px 4px #E9501C;
+	 
+	}
+
+	.flex-item-right {
+	  flex: 50%;
+	  max-width:300px;
+	  margin-top:15px;
+	  padding: 10px;
+	  
+	  background-color:rgba(255,255,255,0.1); /*rbga(233,80,28,1);*/
+	  border-radius:15%;
+	  border:0px solid #E9501C;
+	  box-shadow: 0 6px 4px #E9501C;
+	}
+
+
+	.flex-item-portfolio {
+	  flex: 50%;
+	  max-width:300px;
+	  margin-top:15px;
+	  padding: 10px;
+	  
+	  display:inline-block;
+	  
+	  background-color:rgba(255,255,255,0.1); /*rbga(233,80,28,1);*/
+	  border-radius:5%;
+	  border:0px solid #E9501C;
+	  box-shadow: 0 6px 4px #E9501C;
+	}
+
+
+
+
+	.flex-item-25 {
+	  background-color:white;
+	  padding: 10px;
+	  flex: 25%;
+	}
+
+	/* Responsive layout - makes a one column-layout instead of a two-column layout */
+	@media (max-width: 800px) {
+	  .flex-item-right, .flex-item-left, .flex-item-portfolio {
+		flex: 100%;
+	  }
+	}
+	</style>
+	
+
+
+<style>
+.trapezoid_1{
+    /*width: 42%;*/
+    height: 0px;
+    border-left: 0px solid transparent;
+    border-right: 125px solid transparent;
+    border-top: 250px solid #E9501C;
+}
+
+.trapezoid_2{
+    width: 42%;
+    height: 0px;
+    border-right: 0px solid transparent;
+    border-left: 125px solid transparent;
+    border-bottom: 250px solid white;
+}
+</style>
+
+<style>
+	.wallcontainer{
+       /* width: 200px;*/
+       /* height: 200px;*/
+        position: relative;
+        margin: 0px;
+		
+	background-color:black;
+	/*
+	background-image:url('./ASSETS/ICONS/Wall_1.svg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	border:0px solid lime;*/
+	background-size:cover;
+	
+	/*width: 400%;*/
+    }
+	
+	.box0{
+	    z-index: 0;
+		position: absolute;
+        top: 0;
+        left: 0;  
+		
+    }
+	.box1{
+	    z-index: 1;
+		position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .box2{
+        z-index: 2;
+		width: 100%;
+        height: 100%;            
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 1;  /* for demo purpose  */
+    }
+</style>
+
+
+<style>
+		/* video player */
+		#video-background {
+		  position: fixed;
+		  right: 0; 
+		  bottom: 0;
+		  min-width: 100%; 
+		  min-height: 100%;
+		  width: auto; 
+		  height: auto;
+		  z-index: -100;
+		}
+	</style>
+	
+</head>
+
+
+
+<body style="font-family:sans-serif;" >
+	<div>
+	<video autoplay loop id="video-background" muted width="100%" height="">
+	   <source src="./istockphoto-981007252-640_adpp_is.mp4" type="video/mp4" width="100%">
+	 </video>
+	</div>
+	
+
+<!-- CENTER everything (min:300px) -->
+<div style="min-width:300px;text-align:center;margin-top:5px;margin-bottom:0px;">
+
+    <!-- Company Logo + MENU -->
+	<div style="display:inline-block;width:100%;margin-bottom:20px;">
+				
+		<div style="display:inline-block;float:left;">
+			<div style="display:block;vertical-align:top;margin-top:px;" ><img src="./ASSETS/ICONS/CompanyLogo_2.svg" width="80%"></div>
+		</div>
+		
+		<div class="menu_TOPLEFT" style="text-align:right;margin-right:0%;border:0px solid red;">
+			<div style="display:block;vertical-align:bottom;font-size:0.9em;font-weight:bold;">    
+				<a href="#somos"    ><div style="display:inline-block;color:#E9501C;margin-right:12px;">QUEM SOMOS</div></a>
+				<a href="#servicos" ><div style="display:inline-block;color:#E9501C;margin-right:12px;">SERVIÇOS</div></a>
+				<a href="#portfolio"><div style="display:inline-block;color:#E9501C;margin-right:12px;">PORTOFOLIO</div></a>
+				<a href="#contactos"><div style="display:inline-block;color:#E9501C;margin-right:12px;">CONTACTOS</div></a>
+			</div>
+		</div>
+		
+	</div>	
+	
+	
+	
+	
+		<div id="WALL" style="background-color:black;color:white;border:1px solid cyan;">
+
+			<div style="/*z-index:3;position:absolute*/;top:25%;left:10%; width:;height:100%;font-size: 1.2em;font-weight: 600;border:0px solid lime;">
+			Porque o marketing digital não são só likes, shares e emojis.
+			</div> 
+			
+			<!-- Contate-nos  Panel -->
+			<div style="padding-top:10px;padding-bottom:10px; width:100%;text-align:center;border:0px solid green;/*background:#E9501C*/;color:white;">
+				<div style="display:block;padding:5px;vertical-align:top;font-size: 1em;font-weight: 600;">Dê um salto no seu negócio.</div>
+				<a href="#contactos">
+					<div style="display:inline-block;width:180px;padding:2px;background:white;color:#E9501C;margin-bottom:15px;font-size: 0.8em;">ENTRE EM CONTACTO</div>
+				</a>
+			</div>
+			
+			
+		</div>
+	
+	<!-- Marketing Panel -->
+	
+	<!--
+	<div class="wallcontainer" style="padding-top:200px;padding-bottom:200px;text-align:;color:white;">
+	
+		<div class="box1" id="Dots-container" style="margin-top:;width:100%;height:100%;border:0px solid red;">
+			<iframe src="./ASSETS/CSS/Dots.html" scrolling="no" style="border:none;width:100%;height:100%;"></iframe>
+		</div>
+	    
+		
+		<div class="box2" style="padding:150px;font-size: 1.4em;font-weight: 600;">PAINEL WALL</div>
+		
+		     <div class="box2 trapezoid_1" style="width:50%;"></div> 
+		
+      	<div class="box2" style="font-size:2vw;width:30%;postion:absolute;">Porque o marketing digital não são só likes, shares e emojis.</div> 
+	
+		
+	</div>
+	-->	
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- QUEM SOMOS Panel -->
+	<div id="somos" style="margin-top:px;width:100%;text-align:center;padding-top:40px;padding-bottom:40px;border:0px solid green;">
+
+		<div  style="display:inline-block;text-align:left;padding:10px;vertical-align:top;font-size: 1.5em;font-weight: 600;color:#30aae2;">QUEM SOMOS</div>
+		<br>
+		 <div  style="display:inline-block;width:80%;font-size: 1.2em;font-family:;font-weight:100;color:#878787">
+		  Lorem ipsum dolor sit amet, conectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, conectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, conectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, conectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		 </div>
+		
+		
+	</div>	
+
+	
+	
+	
+	
+	
+	
+	<!-- SERVICOS Panel -->
+	 
+
+		
+	<div  id="servicos" style="display:block;margin-top:30px;padding:5px;font-size: 1.5em;font-weight: 600;background:;color:#E9501C;">SERVIÇOS</div>
+	
+		<div  class="flex-container flex-item-full" style="background:transparent;color:#E9501C;margin-top:10px;margin-bottom:20px;">	
+		  <div class="flex-item-full" style="display:inline-block;padding:0px;border:0px solid blue;">
+	
+			<div class="flex-item-left" style="display:inline-block;vertical-align:top;" >
+				<div style="padding:5px;"><img src="./ASSETS/ICONS/serv1.svg" style="width:50%;"></div>
+				<div style="display:block;text-align:left;margin-top:10px;margin-bottom:10px;font-size: 1.2em;font-weight:600;">Marketing Digital</div>
+				<div style="display:block;text-align:left;margin-top:10px;margin-bottom:10px;font-size: 1em;font-weight:100;color:#878787;"> 
+				  - Activação de marca
+				  <br>- Auditoria Digital
+				  <br>- Planeamento de comunicação digital
+				  <br>- Conteúdos digitais
+				  <br>- Gestão de presença digital
+				</div>
+			</div> 
+			
+			<div class="flex-item-right" style="display:inline-block;vertical-align:top" >
+				<div><img src="./ASSETS/ICONS/serv2.svg" style="width:41%;"></div>
+				<div style="display:block;text-align:left;margin-top:10px;margin-bottom:10px;font-size: 1.2em;font-weight:600;">Websites e Lojas Online</div>
+				<div style="display:block;text-align:left;margin-top:10px;margin-bottom:10px;font-size: 1em;font-weight:100;color:#878787"> 
+				  - Desenvolvimento de Website
+				  <br>- Criação de Lojas Online
+				  <br>- Web Design
+				  <br>- Front-End e Back-End
+				  <br>- Desenvolvimento Custom-Made
+				</div>
+			</div> 
+			
+			<div class="flex-item-left" style="display:inline-block;vertical-align:top;" >
+				<div><img src="./ASSETS/ICONS/serv3.svg" style="width:42%;"></div>
+				<div style="display:block;text-align:left;margin-top:10px;margin-bottom:10px;font-size: 1.2em;font-weight:600;">SEO</div>
+				<div style="display:block;text-align:left;margin-top:10px;margin-bottom:10px;font-size: 1em;font-weight:100;color:#878787"> 
+				  - Auditoria ao Website
+				  <br>- Optmimização de conteúdos
+				  <br>- Análise de ranking de Keywords
+				  <br>- Manutenção correctiva
+				  <br>- Manutenção evolutiva
+				</div>
+			</div> 
+			
+			<div class="flex-item-right" style="display:inline-block;vertical-align:top;padding-top:18px;" >
+				<div><img src="./ASSETS/ICONS/serv4.svg" style="width:50%;"></div>
+				<div style="display:block;text-align:left;margin-top:10px;margin-bottom:10px;font-size: 1.2em;font-weight:600;">Performance Digital</div>
+				<div style="display:block;text-align:left;margin-top:10px;margin-bottom:10px;font-size: 1em;font-weight:100;color:#878787"> 
+				- Gestão de publicidade paga
+				  <br>- Google Ads
+				  <br>- Facebook e Instagram Ads
+				  <br>- Linkedin Ads
+				  <br>- Análise e relatórios de performance
+				</div>
+			</div> 
+			
+			<div class="flex-item-left" style="display:inline-block;vertical-align:top;" >
+				<div><img src="./ASSETS/ICONS/serv5.svg" style="width:40%;"></div>
+				<div style="display:block;text-align:left;margin-top:10px;margin-bottom:10px;font-size: 1.2em;font-weight:600;">Redes Sociais</div>
+				<div style="display:block;text-align:left;margin-top:10px;margin-bottom:10px;font-size: 1em;font-weight:100;color:#878787"> 
+				- Gestão de Redes Sociais
+				  <br>- Calendarização de posts
+				  <br>- Planeamento de comunicação
+				  <br>- Design e criação de publicações
+				  <br>- Análise qualitativa e quantitativa
+				</div>				  
+			</div> 
+			
+			<div class="flex-item-right" style="display:inline-block;vertical-align:top;" >
+				<div><img src="./ASSETS/ICONS/serv6.svg" style="width:39%;"></div>
+				<div style="display:block;text-align:left;margin-top:10px;margin-bottom:10px;font-size: 1.2em;font-weight:600;">Design Gráfico e Digital</div>
+				<div style="display:block;text-align:left;margin-top:10px;margin-bottom:10px;font-size: 1em;font-weight:100;color:#878787"> 
+				- UX/UI Design
+				  <br>- Branding & Logo Design
+				  <br>- Design Back-End e Front-End
+				  <br>- Newsletter Design
+				  <br>- Estacionário
+				</div>
+			</div> 
+			
+			<div class="flex-item-left" style="display:inline-block;vertical-align:top;" >
+				<div><img src="./ASSETS/ICONS/serv7.svg" style="width:43%;"></div>
+				<div style="display:block;text-align:left;margin-top:10px;margin-bottom:10px;font-size: 1.2em;font-weight:600;">Produção Audiovisual</div>
+				<div style="display:block;text-align:left;margin-top:10px;margin-bottom:10px;font-size: 1em;font-weight:100;color:#878787"> 
+				- abcdefghijklmnopqrstuvxz
+				  <br>- abcdefghijklmnopqrstuvxz
+				  <br>- abcdefghijklmnopqrstuvxz
+				  <br>- abcdefghijklmnopqrstuvxz
+				  <br>- abcdefghijklmnopqrstuvxz
+				</div>
+			</div> 
+			
+		</div>
+		</div>		
+	
+	<!-- PORTFOLIO Panel -->
+	<div id="portfolio" style="margin-top:20px;margin-bottom:20px;text-align:center;color:#E9501C;font-size: 1.5em;font-weight:600;padding-top:20px;color:white;border:0px solid lime;">
+
+		  PORTFÓLIO<br>
+		  
+		  <div class="flex-item-full" style="margin-top:-20px;">
+			<div  class="flex-container" style="background:;display:inline-block;color:#E9501C;margin-top:20px;margin-bottom:20px;">	
+				<div class="flex-item-portfolio" style="background:white;" ><img src="./ASSETS/PORTFOLIO/1.png" style="width:70%;"></div> 
+				<div class="flex-item-portfolio" style="background:white;" ><img src="./ASSETS/PORTFOLIO/2.png" style="width:70%;"></div> 
+				<div class="flex-item-portfolio" style="background:white;" ><img src="./ASSETS/PORTFOLIO/3.png" style="width:70%;"></div> 
+				<div class="flex-item-portfolio" style="background:white;" ><img src="./ASSETS/PORTFOLIO/4.png" style="width:70%;"></div> 
+			</div>
+		   </div>
+
+		
+	</div>		
+	
+		
+
+		
+	<!-- CONTACTOS FORM Panel -->
+	
+	<div id="contactos" style="margin-top:20px;margin-bottom:20px;text-align:center;color:#E9501C;font-size: 1.5em;font-weight:600;padding-top:20px;color:white;border:0px solid lime;">
+	    CONTACTOS <br>
+		<div style="margin-top:20px;"><iframe src="./contact.html" scrolling="no" style="border:none;width:65%;height:600px;border-radius:5px;"></iframe></div>
+	</div>	
+	
+
+	
+	
+	<!-- RODAPE Panel -->
+
+	<div style="width:100%;height:px;text-align:left;border:0px solid green;background:BLACK;color:white;font-family:Gill Sans LT;border:0px solid lime;">
+
+		
+	<!-- 	<div style="width:65%;border:0px solid red;margin-left:18%;height:130px;">  -->
+		
+		
+			<div class="" style="display:inline-block;vertical-align:top;background:black;color:silver;text-align:left;font-size: 0.9em;font-weight:600;" >
+				<div><i>Publix Creative Website</i></div>
+				<div style="font-size: 0.9em;font-family:Gill Sans LT;font-weight:100;margin-top:-5px;vertical-align:top;" >
+					<div style="display:inline-block;margin-left:px;"><a href="#somos"    >Quem Somos</a></div>
+					<div style="display:inline-block;margin-left:10px;"><a href="#servicos" >Serviços  </a></div>
+					<div style="display:inline-block;margin-left:10px;"><a href="#portfolio">Portfólio </a></div>
+					<div style="display:inline-block;margin-left:10px;"><a href="#contactos">Contactos </a></div>
+				</div>
+			</div> 
+			
+			<div class="" style="display:inline-block;vertical-align:top;background:black;color:silver;text-align:left;margin-left:20px;font-size: 0.9em;font-weight:600;" >
+				<div><i>Links</i></div>
+				<div style="font-size: 0.9em;font-family:Gill Sans LT;font-weight:100;margin-top:-5px;vertical-align:top;" >
+					<div><a href="#"    >Política de Privacidade</a></div>
+				</div>
+			</div> 
+			
+			
+	<!--	</div>	 -->
+		
+
+	</div>	
+
+	
+</div>
+
+
+	<div style="text-align:right;margin:0;padding:8px;font-size: 0.7em;font-family:font-weight:100;background:black;color:#9C9C9C;">Copyright Publix Creative | Developed by Xcenas @2022</div>
+</body>
+</html>
