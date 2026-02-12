@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Site verification - work done
+ # - Browser Tab - have Logo and Title Name
+ # Center page on Screen: Big and Small (always try to center)
+ # fit screen size -  do not CUT information when resizing or different Screens sizes Monitor vs Phone
+ # Button Animation
+ 
+ improvements
+ # choose FONT
+ # obtain Images of the Brand?!
+ # Design Logotips (png,SVG for better resolution on resize)
+ -->
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PublixPrint</title>
+	
+	<!-- 
+
+	<link rel="icon"             href="./ASSETS/PICS/iconew-150x150.png" sizes="32x32" />
+	<link rel="icon"             href="./ASSETS/PICS/iconew-300x300.png" sizes="192x192" /> 
+	<link rel="apple-touch-icon" href="./ASSETS/PICS/iconew-300x300.png" />
+	
+	-->
+	<link rel="stylesheet"  href="./_STYLE/FONTS/fonts.css"> 
+	
+	
+	<style>
+	a, a:hover, a:visited, a:active {
+	  color: inherit;
+	  text-decoration: none;
+	 }
+	 
+	body {
+		line-height: 1.5;
+		overflow-x: hidden;
+		}
+		
+	html {
+		scroll-behavior: smooth;
+		}
+			
+	img {
+	  width: 80%;
+	  height: auto;
+	}
+	
+	</style>
+	
+	
+	<style>
+	
+	.fundowall {
+	  background-image: url("./_STYLE/ICONS/fundowall.svg"); /* The image used */
+	  background-size: cover;
+	}
+	
+	.menu_BOTTOM  { margin-top:60px; }
+	.menu_TOPLEFT { margin-top:60px;width:100%; }
+	
+	@media screen and (max-width: 802px) {
+	 .menu_BOTTOM { margin-top:0px;display:inline-block;}
+	 .menu_TOPLEFT  { margin-top:0px;display:inline-block;width:130px;}
+	}
+	
+	@media screen and (max-width: 452px) {
+	 .menu_BOTTOM { margin-top:0px;display:inline-block;}
+	 .menu_TOPLEFT  { margin-top:0px;display:block;width:95%;font-size:0.8em;font-weight:100;}
+	}
+
+	</style>
+	
+	
+<style>
+	/* -- ANIMATION -- */
+
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient( 90deg,   #0975B3 30%,  #e50c7f 80%, #FFFF00 5%);
+  bottom:0;
+  left:0;
+  opacity:.5;
+  right:0;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:3s;
+  background-color:rgba(55,100,50,.8);  /*yellow */
+}
+.bg3 {
+  animation-duration:5s;
+  background-color:rgba(199,200,50,.2);
+}
+.bg4 {
+  animation-duration:6s;
+  background-color:rgba(0, 140, 255,.2);  /+ Blue */
+  animation-direction:alternate-reverse;
+}
+.bg5 {
+  animation-duration:7s;
+  background-color:rgba(255, 0, 255,.8); /* pink */
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+</style>
+
+<style>
+.trapezoid_1{
+    width: 42%;
+    height: 0px;
+    border-left: 0px solid transparent;
+    border-right: 125px solid transparent;
+    border-top: 250px solid white;
+}
+
+.trapezoid_2{
+    width: 42%;
+    height: 0px;
+    border-right: 0px solid transparent;
+    border-left: 125px solid transparent;
+    border-bottom: 250px solid white;
+}
+</style>
+	
+</head>
+
+
+
+<body style="font-family:Gill Sans,sans-serif;" >
+
+<!-- CENTER everything (min:300px) -->
+<div style="min-width:300px;text-align:center;margin-top:5px;margin-bottom:0px;">
+
+
+
+
+    <!-- Company Logo + MENU -->
+	<div style="display:inline-block;width:100%;">
+				
+		<div style="display:inline-block;float:left;">
+			<div style="display:block;vertical-align:top;margin-top:px;" ><img src="./_STYLE/ICONS/Company.svg" width="80%"></div>
+		</div>
+		
+		<div class="menu_TOPLEFT" style="text-align:right;margin-right:0%;border:0px solid red;">
+			<div style="display:block;vertical-align:bottom;font-size:0.9em;font-weight:bold;">    
+				<a href="#somos"    ><div style="display:inline-block;color:#30aae2;margin-right:12px;">QUEM SOMOS</div></a>
+				<a href="#servicos" ><div style="display:inline-block;color:#e50c7f;margin-right:12px;">SERVIÇOS</div></a>
+				<a href="#portfolio"><div style="display:inline-block;color:#f7e822;margin-right:12px;">PORTOFOLIO</div></a>
+				<a href="#contactos"><div style="display:inline-block;color:#000000;margin-right:12px;">CONTACTOS</div></a>
+			</div>
+		</div>
+		
+	</div>	
+	
+	
+	<!-- Marketing Panel -->
+	<div>
+	
+		<!-- ANIM Background -->
+		<div style="display:block;height:100%;width:95%;border:0px solid red;" >
+			<div class="bg"     style="display:block;margin-top:20px;height:400px;width:85%;"></div>	
+			<div class="bg bg2" style="display:block;margin-top:-400px;height:400px;width:85%;"></div>
+			<div class="bg bg4" style="display:block;margin-top:-400px;height:400px;width:85%;"></div>
+		 	<div class="bg bg5" style="display:block;margin-top:-400px;height:400px;width:85%;"></div>
+		<!--	<div class="bg bg3" style="display:block;margin-top:-400px;height:400px;width:85%;"></div> -->
+		</div>	
+		<!-- ANIM Background- END -->
+		
+		
+		<div style="display:block;position:relative;left:0;width:100%;top:-380px;border:0px dashed red;background-color:rgba(255,255,255,0.7);">
+			<div style="display:inline-block;width:300px;vertical-align:middle;"><img src="./_STYLE/ICONS/ploter_anim.gif" ></div>
+			<div style="display:inline-block;width:70%;vertical-align:middle;font-size:1.5em;color:black;"><b>Experiência comprovada em impressão gráfica.</b></div>
+		</div>
+		
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<!-- QUEM SOMOS Panel -->
+	<div id="somos" style="margin-top:-200px;width:100%;text-align:center;border:0px solid green;">
+
+		<div  style="display:inline-block;text-align:left;padding:10px;vertical-align:top;font-size: 1.5em;font-weight: 600;color:#30aae2;">QUEM SOMOS</div>
+		<br>
+		 <div  style="display:inline-block;width:80%;font-size: 1.3em;font-family:Gill Sans LT;font-weight:100;">
+		  Lorem ipsum dolor sit amet, conectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, conectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, conectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, conectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		 </div>
+		
+		<div style="display:block;font-size: 1.3em;color:#adaeaf;font-weight:600;margin-top:10px;margin-bottom:20px;">
+			<div style="display:inline-block;vertical-align:top;padding:20px;">1452 cafés</div>
+			<div style="display:inline-block;vertical-align:top;padding:20px;">504 clientes satisfeitos</div>
+			<div style="display:inline-block;vertical-align:top;padding:20px;">2709 projetos de tipografia</div>
+		</div>
+		
+	</div>	
+	
+	
+	<!-- SERVICOS Panel -->
+	<div id="servicos"style="width:100%;text-align:center;padding-bottom:20px;border:0px solid green;background:#e50c7f;color:white;">
+
+		<div  style="display:block;padding:10px;text-align:center;vertical-align:top;font-size: 1.5em;font-weight: 600;">SERVIÇOS</div>
+		
+		<div style="margin-top:20px;margin-bottom:20px;">
+			<div style="display:inline-block;vertical-align:top;" >
+				<div><img src="./_STYLE/ICONS/rulerpen.svg" style="width:40%;"></div>
+				<div style="display:block;margin-top:10px;margin-bottom:10px;font-size: 1.2em;font-weight:600;">Design Gráfico</div>
+			</div> 
+			
+			<div style="display:inline-block;vertical-align:top;" >
+				<div><img src="./_STYLE/ICONS/printer.svg" style="width:40%;"></div>
+				<div style="display:block;margin-top:10px;margin-bottom:10px;font-size: 1.2em;font-weight:600;">Impressão</div>
+			</div> 
+			
+			<div style="display:inline-block;vertical-align:top;" >
+				<div><img src="./_STYLE/ICONS/cartas.svg" style="width:40%;"></div>
+				<div style="display:block;margin-top:10px;margin-bottom:10px;font-size: 1.2em;font-weight:600;">Estacionário</div>
+			</div> 
+			
+			
+		</div>
+	</div>		
+	
+	
+	<!-- panel - entre em contacto 1 -->
+	<div style="padding-top:20px;padding-bottom:20px; width:100%;text-align:center;border:0px solid green;background:#edeced;color:black;">
+		<div style="display:block;padding:15px;vertical-align:top;font-size: 1.4em;font-weight: 600;">Dê um salto no seu negócio.</div>
+		
+		<a href="#contactos">
+			<div style="display:inline-block;width:180px;padding:2px;background:black;color:white;margin-left:0%;margin-bottom:15px;font-size: 0.9em;">ENTRE EM CONTACTO</div>
+		</a>
+	</div>	
+	
+	
+	<!-- PORTFOLIO Panel -->
+	<div id="portfolio" style="margin-top:px;padding-bottom:20px;width:100%;height:px;text-align:center;border:0px solid green;background:#f7e822;color:white;">
+
+		<div  style="display:block;text-align:center;padding:10px;vertical-align:top;font-size: 1.5em;font-weight: 600;">PORTFÓLIO</div>
+		
+		<div style="display:inline-block;vertical-align:top;"><img src="./IMAGES/Portfolio1.png" style="width:;"></div>
+		<div style="display:inline-block;vertical-align:top;"><img src="./IMAGES/Portfolio2.png" style="width:;"></div>
+		<div style="display:inline-block;vertical-align:top;"><img src="./IMAGES/Portfolio3.png" style="width:;"></div>
+		
+	</div>	
+	
+	
+	<!-- panel - entre em contacto 2 -->
+	<div style="padding-top:20px;padding-bottom:20px; width:100%;text-align:center;border:0px solid green;background:#edeced;color:black;">
+		<div style="display:block;padding:15px;vertical-align:middle;font-size: 1.4em;font-weight: 600;">Dê um salto no seu negócio.</div>
+	</div>
+	
+	
+	<!-- CONTACTOS Panel -->
+	<div id="contactos" style="margin-top:px;width:100%;height:px;text-align:center;border:0px solid green;background:#1d1d1b;color:white;">
+
+		<div  style="display:inline-block;text-align:left;padding:10px;vertical-align:top;font-size: 1.5em;font-weight: 600;">CONTACTOS</div>
+		<div style=""><iframe src="./contact.html" scrolling="no" style="border:none;width:75%;height:630px;"></iframe></div>
+		
+	</div>	
+	
+	
+	<!-- RODAPE Panel -->
+	<div style="margin-top:px;width:100%;height:px;text-align:left;border:0px solid green;background:#30aae2;color:white;font-family:Gill Sans LT;">
+        
+		<div  style="display:block;padding:15px;">    
+
+			<div style="display:inline-block;width:150px;vertical-align:top;font-size: 1.1em;">
+				<div>Publix Print Website</div>
+
+				<div style="font-size: 0.8em;font-family:Gill Sans LT;font-weight:100;margin-top:15px;vertical-align:top;" >
+					<div><a href="#somos"    >Quem Somos</a></div>
+					<div><a href="#servicos" >Serviços  </a></div>
+					<div><a href="#portfolio">Portfólio </a></div>
+					<div><a href="#contactos">Contactos </a></div>
+				</div>
+			</div>
+			
+			<div style="display:inline-block;width:145px;vertical-align:top;font-size: 1.1em;">
+				<div>Links</div>
+				
+				<div style="font-size: 0.8em;font-family:Gill Sans LT;font-weight:100;margin-top:15px;vertical-align:top;" >
+					<div>Política de Privacidade</div>
+	
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>	
+	
+	
+</div>
+
+
+	<div style="text-align:right;margin:0;padding:8px;font-size: 0.7em;font-family:font-weight:100;background:white;color:#9C9C9C;">Copyright PublixPrint | Developed by Xcenas @2022</div>
+</body>
+</html>

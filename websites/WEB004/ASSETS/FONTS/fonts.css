@@ -1,0 +1,16 @@
+@font-face {
+	font-family:'Gill Sans'; 
+	src:url(./GillSansStd.otf);
+}
+
+@font-face {
+	font-family:'Gill Sans'; 
+	font-weight:bold; 
+	src:url(./GillSansStd-Bold.otf);
+}
+
+@font-face {
+	font-family:'Gill Sans LT'; 
+	src:url(./GillSansStd-Light.otf);
+}
+

@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Site verification - work done
+
+ # Title Name
+ # Center page on Screen: Big and Small (always try to center)
+ # Fit screen size -  do not CUT information when resizing or different Screens sizes Monitor vs Phone
+ # Font
+ # Gallery Photo
+ # Contact Form
+ 
+ - Xcenas@2022 -
+ -->
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Publixmedia</title>
+	
+	<!-- 
+
+	<link rel="icon"             href="./ASSETS/PICS/iconew-150x150.png" sizes="32x32" />
+	<link rel="icon"             href="./ASSETS/PICS/iconew-300x300.png" sizes="192x192" /> 
+	<link rel="apple-touch-icon" href="./ASSETS/PICS/iconew-300x300.png" />
+	
+	-->
+	<link rel="stylesheet"  href="./ASSETS/FONTS/fonts.css"> 
+
+
+	
+	
+	<style>
+	a, a:hover, a:visited, a:active {
+	  color: inherit;
+	  text-decoration: none;
+	 }
+	 
+	body {
+		line-height: 1.5;
+		}
+		
+	html {
+		scroll-behavior: smooth;
+		}
+			
+	img {
+	  width: 80%;
+	  height: auto;
+	}
+	
+
+	
+	</style>
+	
+	
+	<style>
+          
+		/* Slideshow --------- */
+		.slideshow-container {
+		  max-width: 1000px;
+		  position: relative;
+		  margin: auto;
+		  vertical-align: middle;
+		}
+
+		/* The dots/bullets/indicators */
+		.dot {
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 2px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+
+		.active {
+		  background-color: #3773b9;
+		}
+
+		/* Fading animation */
+		.fade {
+		  animation-name: fade;
+		  animation-duration: 0.5s;
+		}
+
+		@keyframes fade {
+		  from {opacity: .8} 
+		  to {opacity: 1}
+		}
+	</style>
+	
+	<style>
+		/* Photo border Shadow --------- */
+		.box {
+			width:98%;
+			padding:15px;
+			background:#fff;
+			margin:20px auto 60px;
+			border-radius:5px;
+				 box-shadow:0 0 80px rgba(0,0,0,0.8);   
+		}
+
+		.css3-shadow  {
+			position:relative;
+			-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+					box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+		}
+
+	</style>
+	
+	<style>
+		/* video player */
+		#video-background {
+		  position: fixed;
+		  right: 0; 
+		  bottom: 0;
+		  min-width: 100%; 
+		  min-height: 100%;
+		  width: auto; 
+		  height: auto;
+		  z-index: -100;
+		}
+	</style>
+	
+	<style>
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+  border:0px;
+}
+
+.flex-item-full {
+  background-color: #E4E4C0;
+  padding: 5px;
+  flex: 100%;
+}
+
+.flex-item-30 {
+  background-color: white; /* #f1f1f1 */
+  padding: 5px;
+  flex: 33%;
+}
+
+
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+/* if lees than 800px, make fless item 100 percent */ 
+@media (max-width: 800px) {
+  .flex-item-30 {
+    flex: 100%;
+  }
+}
+</style>
+
+</head>
+
+
+
+
+
+
+<body style="font-family:Gill Sans,sans-serif;min-width:300px;max-width:1200px;text-align:center;margin:auto;padding:10px;" >
+
+<!-- Start video  -->
+<div class="r">
+  <video autoplay loop id="video-background" muted>
+   <source src="./wallvideo.mp4" type="video/mp4">
+ </video>
+</div>
+<!-- end video code -->
+
+
+
+<!-- CENTER everything (min:300px) -->
+<div style="text-align:center;border:0px solid red;">
+
+
+<!-- MENU -->
+    <div style="display:block;text-align:center;width:100%;">
+	
+		<div style="display:block;width:;margin-top:15px;"> <img src="./ASSETS/ICONS/publixmedia.svg" style="width:50%;" ></div>
+		
+		<div style="margin-top:20px;font-size:1.2em;font-weight:bold;">
+				<!-- <a href="#somos"    ><div style="display:inline-block;color:#30aae2;margin-right:15px;">QUEM SOMOS</div></a> -->
+				<a href="#servicos" ><div style="display:inline-block;color:#3773b9;margin-right:15px;">SERVIÇOS</div></a>
+				<a href="#portfolio"><div style="display:inline-block;color:#3773b9;margin-right:15px;">PORTFÓLIO</div></a>
+				<a href="#contactos"><div style="display:inline-block;color:#3773b9;margin-right:15px;">CONTACTOS</div></a>
+		</div>
+			
+	</div>
+	
+	
+	<!-- QUEM SOMOS Panel -->
+
+	<div id="somos" style="margin-top:40px;width:100%;text-align:center;background:rgba(255,255,255, 0.7);border-radius:10px 10px 0px 0px;">
+	
+		<div  style="display:block;padding:10px;vertical-align:top;text-align:center;font-size: 1.5em;font-weight: 600;color:#black;">QUEM SOMOS</div>
+		
+		 
+		<div  style="display:block;width:;padding:2%;font-size: 1.3em;font-family:Gill Sans LT;font-weight:100;color:black;border:0px solid red;">
+		  Gestão de espaçospublicitários nos principais eixos rodoviários e centros urbanos, desde setas direcionais comerciais ao monoposte.
+		</div>
+		
+		<div style="display:block;font-size: 1.3em;color:black;font-weight:600;margin-top:0px;padding-top:10px;background:rgba(255,255,255,0);">
+			<div style="display:inline-block;vertical-align:top;padding:10px;">+ de 150 faces</div><br>
+			<div style="display:inline-block;vertical-align:top;padding:10px;">+ de 60 anunciantes</div>
+		</div>	
+		
+		<!-- panel - entre em contacto 1 -->
+	    <div style="padding-top:px;padding-bottom:20px; width:100%;text-align:center;border:0px solid green;background:rgba(255,255,255, 0);color:#3773b9;">
+		<div style="display:block;padding:15px;vertical-align:top;font-size: 1.3em;font-weight: 600;">Dê um salto no seu negócio.</div>
+		<a href="#contactos">
+			<div style="display:inline-block;width:180px;padding:2px;background:#3773b9;color:white;margin-left:0%;margin-bottom:15px;font-size: 0.9em;">ENTRE EM CONTACTO</div>
+		</a>
+	</div>
+			
+			
+	</div>	
+	
+
+
+
+      
+	
+	<!-- SERVICOS Panel -->
+	
+	<div  id="servicos" style="display:block;margin-top:40px;padding:15px;font-size: 1.5em;font-weight: 600;background:white;color:#3773b9;border-radius:10px 10px 0px 0px;">SERVIÇOS</div>
+	
+	<div  class="flex-container" style="">
+	  
+	  
+		<div class="flex-item-30">
+			<div><img src="./ASSETS/ICONS/serv_paineis.png?1" style=""></div>
+			<!-- <div style="display:;margin-top:10px;margin-bottom:10px;font-size: 1.2em;font-weight:600;">Paineis</div> -->
+		</div>
+		<div class="flex-item-30">
+			<div><img src="./ASSETS/ICONS/serv_monopostes.png?1" style=""></div>
+			<!-- <div style="display:;margin-top:10px;margin-bottom:10px;font-size: 1.2em;font-weight:600;">Dualpostes</div> -->
+		</div>
+
+		<div class="flex-item-30">
+			<div><img src="./ASSETS/ICONS/serv_monopostes.png?1" style=""></div>
+			<!-- <div style="display:;margin-top:10px;margin-bottom:10px;font-size: 1.2em;font-weight:600;">Monopostes</div> -->
+		</div>
+			  
+		<div class="flex-item-30">
+			<div><img src="./ASSETS/ICONS/serv_setarios.png?1" style=""></div>
+			<!-- <div style="display:;margin-top:10px;margin-bottom:10px;font-size: 1.2em;font-weight:600;">Setarios</div>  -->
+		</div>
+		
+		<div class="flex-item-30">
+			<div>&nbsp</div>
+		</div>
+
+		<div class="flex-item-30">
+			<div><img src="./ASSETS/ICONS/serv_empenas.png?1" style="border:none;"></div>
+			<!-- <div style="display:;margin-top:10px;margin-bottom:10px;font-size: 1.2em;font-weight:600;">Empenas de Edifícios</div> -->
+		</div>
+
+	</div>
+	
+	
+	<!-- Maps -->
+	<div  id="mapas" style="display:block;margin-top:0px;padding:15px;font-size: 1.5em;font-weight: 600;background:white;color:#3773b9;">
+	    <div class="flex-item-full" style="">
+		   <div><img src="./ASSETS/ICONS/serv_mapa.png?1" style=""></div>
+		   <!-- <div style="display:;margin-top:10px;margin-bottom:10px;font-size: 1.2em;font-weight:600;">Mapas</div> -->
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<!-- PORTFOLIO Panel -->
+	<!-- <div id="portfolio" style="margin-top:40px;padding-bottom:10px;text-align:center;background:rgba(255,255,255, 0.4);border-radius: 10px 10px 10px 10px;"> -->
+	
+	<div  id="portfolio" style="display:block;margin-top:20px;padding-bottom:5px;text-align:center;background:rgba(255,255,255, 0.4);color:#3773b9;border-radius:10px 10px 10px 10px;">
+
+        <div  style="display:block;padding-top:20px;vertical-align:top;text-align:center;font-size: 1.5em;font-weight: 600;color:#3773b9;">PORTFÓLIO</div>
+		
+		    <!--- SLIDESHOW -->
+				<div class=" " style="margin-top:10px;z-index:-1;">
+					<div class="mySlides fade"  style="z-index:-1;">
+					   <div class="box" ><img src="./ASSETS/FOTOS/port1.jpeg" style="width:100%;" ></div>
+					</div>
+
+					<div class="mySlides fade" style="z-index:-1;">
+					   <div class="box" ><img src="./ASSETS/FOTOS/port2.jpeg" style="width:100%;" ></div>
+					</div>
+
+					<div class="mySlides fade" style="z-index:-1;">
+					   <div class="box"><img src="./ASSETS/FOTOS/port3.jpeg" style="width:100%;" ></div>
+					</div>
+
+					<div class="mySlides fade">
+					   <div class="box"><img src="./ASSETS/FOTOS/port4.jpeg" style="width:100%;" ></div>
+					</div>
+
+					<div class="mySlides fade">
+					   <div class="box"><img src="./ASSETS/FOTOS/port5.jpeg" style="width:100%;" ></div>
+					</div>
+				</div>
+            					
+				<div style="display:none;text-align:center">
+				  <br>
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				  <span class="dot"></span>
+				</div>
+
+				<script>
+				let slideIndex = 0;
+				showSlides();
+
+				function showSlides() {
+				  let i;
+				  let slides = document.getElementsByClassName("mySlides");
+				  let dots = document.getElementsByClassName("dot");
+				  for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				  }
+				  slideIndex++;
+				  if (slideIndex > slides.length) {slideIndex = 1}    
+				  for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				  setTimeout(showSlides, 3000); // Change image every 1 secs= 1000
+				}
+				</script>
+			<!--- SLIDESHOW - END -->
+
+	</div>	
+	
+	
+
+	<div id="contactos" style="display:block;width:100%;text-align:center;margin-top:20px;">
+			<div  style="padding-top:20px;width:100%;font-size: 1.5em;font-weight: 600;background:#3773b9;color:white;border-radius: 4px 4px 4px 4px;">CONTACTOS
+			<div><iframe src="./contact.html" scrolling="no" style="border:none;width:75%;height:560px;"></iframe></div>
+			</div>
+	</div>
+
+
+
+<div style="text-align:right;margin:0;padding:8px;font-size: 0.7em;font-family:;font-weight:100;background:rgba(255,255,255, 0.4);color:#202020;border-radius:0px;">Copyright PublixMedia | Developed by PublixCreative</div>
+</div>
+
+
+	
+</body>
+</html>
